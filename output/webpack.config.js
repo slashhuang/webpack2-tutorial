@@ -17,9 +17,16 @@ const dynamic_entry_promise=()=>{
 module.exports = {
   entry:base,
   output: {
+    //导出目录
   	path: path.resolve(__dirname, 'dist1'),
+  	//包规范格式
+  	libraryTarget:'umd',
+  	library: "MyLibrary",
+    //文件名
   	chunkFilename:'[id].js',
+    //hash位数
   	hashDigestLength:2,
+    //导出文件
     filename: '_[chunkhash]_[name]_[id].js'
   }
 };
