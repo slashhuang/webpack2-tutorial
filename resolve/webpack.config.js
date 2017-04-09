@@ -19,18 +19,19 @@ module.exports = {
   	path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
   },
+  resolve:{
+    alias:{
+
+    }
+  },
   module:{
     rules:[
-    // Conditions, Results and nested Rules.
         {
         test: /\.jsx?$/,
         
         exclude: [
           'node_modules'
         ],
-        // flags to apply these rules, even if they are overridden (advanced option)
-        // loader: "babel-loader",
-        // rule.use是数组形式和rule.loaders是它的别名
         use:[{
            loader: "babel-loader",
         }]
