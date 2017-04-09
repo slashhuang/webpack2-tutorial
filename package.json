@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "entry": "node ./command.js -f=entry",
-    "output": "node ./command.js -f=output"
+    "output": "node ./command.js -f=output",
+    "split": "node ./command.js -f=code_split"
   },
   "author": "slashhuang",
   "license": "MIT",

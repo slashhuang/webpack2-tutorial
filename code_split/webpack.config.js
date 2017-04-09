@@ -1,8 +1,7 @@
 
 const path =require('path');
 let base = {
-	  index:'./index.js?t=2',
-   	  index1:'./index1.js'
+	    index:'./index.js',
 };
 
 //webpack2 提供了多种配置方案
@@ -19,7 +18,7 @@ module.exports = {
   output: {
     //导出目录
   	path: path.resolve(__dirname, 'dist'),
-    publicPath: "/assets/", // server-relative
+    publicPath: "/dist/", // server-relative
   	//包规范格式
   	libraryTarget:'umd',
   	library: "MyLibrary",
