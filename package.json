@@ -9,7 +9,8 @@
     "webpack2"
   ],
   "scripts": {
-    "entry": "node ./command.js -f=entry"
+    "entry": "node ./command.js -f=entry",
+    "output": "node ./command.js -f=output"
   },
   "author": "slashhuang",
   "license": "MIT",

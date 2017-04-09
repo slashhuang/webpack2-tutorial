@@ -1,5 +1,6 @@
 /**
  * built by slashhuang
+ * 17/4/9
  */
 const path= require('path');
 const webpack = require('webpack');
@@ -9,7 +10,7 @@ let folder = yargs.argv['f'];
 
 const configFile = require(`./${folder}/webpack.config.js`);
 configFile.context = path.resolve(process.cwd(),`./${folder}/`);
-configFile.output.path = path.resolve(configFile.context,'dist');
+configFile.output.path =configFile.output.path? configFile.output.path:path.resolve(configFile.context,'dist');
 configFile.watch = true;
 
 Promise.resolve({then:(resolve,reject)=>{
