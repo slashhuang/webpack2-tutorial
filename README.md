@@ -14,7 +14,18 @@
 
   $ git clone git@github.com:slashhuang/webpack-tutorial.git
 
-  $ npm run demo 1 
+  # run the following npm scripts to learn webpack2
+  # example : npm run entry
+  "scripts": {
+    "entry": "node ./command.js -f=entry",
+    "output": "node ./command.js -f=output",
+    "split": "node ./command.js -f=code_split",
+    "module": "node ./command.js -f=modules",
+    "resolve": "node ./command.js -f=resolve",
+    "devtool": "node ./command.js -f=devtool",
+    "loaders": "node ./command.js -f=loaders",
+    "plugins": "node ./command.js -f=plugins"
+  }
 
 ```
 
