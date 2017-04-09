@@ -14,7 +14,9 @@
     "split": "node ./command.js -f=code_split",
     "module": "node ./command.js -f=modules",
     "resolve": "node ./command.js -f=resolve",
-     "devtool": "node ./command.js -f=devtool"
+    "devtool": "node ./command.js -f=devtool",
+    "loaders": "node ./command.js -f=loaders",
+    "plugins": "node ./command.js -f=plugins"
   },
   "author": "slashhuang",
   "license": "MIT",
