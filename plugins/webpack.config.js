@@ -8,6 +8,7 @@ const path = require('path'),
 
 let base = {
 	    index:'./index.js',
+        common:"./common.js"
 };
 
 module.exports = {
@@ -25,8 +26,9 @@ module.exports = {
         test:path.resolve(__dirname,'test/test.js')
     }
   },
+  // webpack lifecycle before-complitaion run done =>
   plugins:[
-          new webpack.ProvidePlugin({
+            new webpack.ProvidePlugin({
                 $: 'jquery'
             }),
             new WebpackNotifierPlugin({
@@ -46,7 +48,7 @@ module.exports = {
   ],
   module:{
     rules:[
-       {
+            {
                 test: /\.js[x]?$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
