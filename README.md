@@ -5,7 +5,7 @@
 [官方github](https://github.com/webpack/webpack)
 
 ```bash
-  $ npm i 
+  $ npm install 
 ```
 
 ## Usage 使用
@@ -15,7 +15,9 @@
   $ git clone git@github.com:slashhuang/webpack-tutorial.git
 
   # run the following npm scripts to learn webpack2
-  # example : npm run entry
+
+  npm run entry
+  
   "scripts": {
     "entry": "node ./command.js -f=entry",
     "output": "node ./command.js -f=output",
