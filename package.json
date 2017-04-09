@@ -13,7 +13,8 @@
     "output": "node ./command.js -f=output",
     "split": "node ./command.js -f=code_split",
     "module": "node ./command.js -f=modules",
-    "resolve": "node ./command.js -f=resolve"
+    "resolve": "node ./command.js -f=resolve",
+     "devtool": "node ./command.js -f=devtool"
   },
   "author": "slashhuang",
   "license": "MIT",
