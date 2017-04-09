@@ -29,10 +29,12 @@ module.exports = {
           'node_modules'
         ],
         // flags to apply these rules, even if they are overridden (advanced option)
-
-        loader: "babel-loader"
+        // loader: "babel-loader",
+        // rule.use是数组形式和rule.loaders是它的别名
+        use:[{
+           loader: "babel-loader",
+        }]
       },
-
     ]
   }
 };
