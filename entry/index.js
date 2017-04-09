@@ -1,1 +1,1 @@
-console.log('I am index')
+alert('I am index')
