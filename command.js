@@ -16,8 +16,14 @@ configFile.watch = true;
 Promise.resolve({then:(resolve,reject)=>{
 	resolve(exec(`rm -rf ${configFile.output.path}`))
 }}).then(()=>{
-	webpack(configFile,function(){
-	    console.log(`run  compilation done ${Date.now()}\n`)
+	webpack(configFile,function(err,stats){
+
+		console.log(stats.toString({
+                chunks:true,
+                assets:true,
+                children:true,
+                colors:true
+            }))
 	});
 }).catch(error=>{
 	console.error(error);

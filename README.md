@@ -2,6 +2,7 @@
 ## webpack2-tutorial
 
 > webpack2 教程
+[官方github](https://github.com/webpack/webpack)
 
 ```bash
   $ npm i 

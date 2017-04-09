@@ -37,7 +37,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		1: 0
+/******/ 		2: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -92,7 +92,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + {"2":"0d"}[chunkId] + "_" + chunkId + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + {"0":"5b"}[chunkId] + "_" + chunkId + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -149,19 +149,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */
+/* 0 */,
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 console.log('I am index')
 
 //require.ensure(dependencies: String[], callback: function(require), chunkName: String)
 
-__webpack_require__.e/* require.ensure */(2).then(((require)=>{
-	__webpack_require__(1)
+__webpack_require__.e/* require.ensure */(0).then(((require)=>{
+	__webpack_require__(0)
 }).bind(null, __webpack_require__)).catch(__webpack_require__.oe)
 
 /***/ })
