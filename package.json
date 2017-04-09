@@ -44,6 +44,7 @@
   },
   "repository": "slashhuang/webpack2-tutorial",
   "devDependencies": {
+    "core-js": "^2.4.1",
     "yargs": "^7.0.2"
   }
 }

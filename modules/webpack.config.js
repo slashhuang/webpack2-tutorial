@@ -23,10 +23,16 @@ module.exports = {
     rules:[
     // Conditions, Results and nested Rules.
         {
-          test:/\.js$/,
-          //https://webpack.js.org/configuration/module/#rule-use
-          use:"babel-loader"
-        }
+        test: /\.jsx?$/,
+        
+        exclude: [
+          'node_modules'
+        ],
+        // flags to apply these rules, even if they are overridden (advanced option)
+
+        loader: "babel-loader"
+      },
+
     ]
   }
 };
