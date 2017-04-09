@@ -1,11 +1,10 @@
 console.log('I am index')
 
-import test  from 'test';
-
+// import test  from 'test';
+const test = require('test')
 class S {
 	constructor(){
 		this.a = 'a '
 	}
 }
-debugger;
 console.log(test());

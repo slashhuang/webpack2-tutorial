@@ -8,4 +8,6 @@ class S {
 		this.a = 'a '
 	}
 }
+
+alert(new S())
 console.log(split);

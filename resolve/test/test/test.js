@@ -2,5 +2,5 @@
 
 
 module.exports = ()=>{
-	return 'test'
+	console.log('test')
 }
