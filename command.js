@@ -17,12 +17,14 @@ Promise.resolve({then:(resolve,reject)=>{
 	resolve(exec(`rm -rf ${configFile.output.path}`))
 }}).then(()=>{
 	webpack(configFile,function(err,stats){
-
+// https://webpack.js.org/configuration/stats/#stats
 		console.log(stats.toString({
                 chunks:true,
                 assets:true,
                 children:true,
-                colors:true
+                colors:true,
+                warnings: true
+
             }))
 	});
 }).catch(error=>{

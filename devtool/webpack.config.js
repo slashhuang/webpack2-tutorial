@@ -7,6 +7,8 @@ let base = {
 module.exports = {
   // https://webpack.js.org/configuration/devtool/#devtool
   devtool:'source-map',
+  // https://webpack.js.org/configuration/target/#target
+  target:"web",
   entry:base,
   output: {
   	path: path.resolve(__dirname, 'dist'),
