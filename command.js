@@ -3,19 +3,22 @@
  */
 const path= require('path');
 const webpack = require('webpack');
-//命令
-const command = JSON.parse(process.env.npm_config_argv)['remain'].pop();
-if(command.toString().length==1){
-    command ='0'+command; 
-};
-if(command>16 || command<1){
-    console.log('最后一个参数请指定在1-16之间');
-    process.exit(0);
-}
-const configFile = require(`./demo${command}/webpack.config.js`);
-configFile.context = path.resolve(process.cwd(),`./demo${command}/`);
-configFile.output.path = configFile.context;
+const yargs = require('yargs');
+const exec = require('child_process').execSync;
+let folder = yargs.argv['f'];
+
+const configFile = require(`./${folder}/webpack.config.js`);
+configFile.context = path.resolve(process.cwd(),`./${folder}/`);
+configFile.output.path = path.resolve(configFile.context,'dist');
 configFile.watch = true;
-const compiler = webpack(configFile,function(){
-    console.log(`run  compilation done ${Date.now()}\n`)
-});
+
+Promise.resolve({then:(resolve,reject)=>{
+	resolve(exec(`rm -rf ${configFile.output.path}`))
+}}).then(()=>{
+	webpack(configFile,function(){
+	    console.log(`run  compilation done ${Date.now()}\n`)
+	});
+}).catch(error=>{
+	console.error(error);
+	process.exit(1)
+})
