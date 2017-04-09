@@ -21,7 +21,7 @@ module.exports = {
   },
   resolve:{
     alias:{
-
+        test:path.resolve(__dirname,'test/test.js')
     }
   },
   module:{

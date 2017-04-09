@@ -1,11 +1,11 @@
 console.log('I am index')
 
-//require.ensure(dependencies: String[], callback: function(require), chunkName: String)
-import { split }  from './split';
+import test  from 'test';
 
 class S {
 	constructor(){
 		this.a = 'a '
 	}
 }
-console.log(split);
+debugger;
+console.log(test());
