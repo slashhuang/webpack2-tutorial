@@ -1,7 +1,7 @@
 
 ## webpack2-tutorial
 
-webpack2教程
+> webpack2 教程
 
 ```bash
   $ npm i 
@@ -10,15 +10,14 @@ webpack2教程
 ## Usage 使用
 
 ```bash
-  $ npm run demo 1 
-```
-
-Then, clone the repo and install the dependencies.
-
-
-## 下载代码
-```bash
 
   $ git clone git@github.com:slashhuang/webpack-tutorial.git
 
-```  
+  $ npm run demo 1 
+
+```
+
+## 参考资料
+
+1. [webpack2参考资料](https://webpack.js.org/)
+ 
