@@ -17,7 +17,8 @@
     "devtool": "node ./command.js -f=devtool",
     "loaders": "node ./command.js -f=loaders",
     "plugins": "node ./command.js -f=plugins",
-    "hoist": "node ./command.js -f=scope-hoisting"
+    "hoist": "node ./command.js -f=scope-hoisting",
+    "require": "node ./command.js -f=require"
   },
   "author": "slashhuang",
   "license": "MIT",
