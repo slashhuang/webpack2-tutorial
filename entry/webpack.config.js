@@ -1,25 +1,11 @@
-
-
-let base = {
-	  index:'./index.js',
-   	  index1:'./index1.js'
-};
-
-// let base ='./index.js'
-
-// //webpack2 提供了多种配置方案
-// const dynamic_entry = ()=>base;
-
-// const dynamic_entry_promise=()=>{
-// 	return new Promise((resolve,reject)=>{
-// 		resolve(base)
-// 	})
-// }
-
-
+const path =require('path');
 module.exports = {
-  entry:base,
+  entry:{
+	  index:'./index.js',
+   	index1:'./index1.js'
+  },
   output: {
+    path: path.resolve(__dirname, 'dist'),
     filename: '_[name].js' 
   }
 };

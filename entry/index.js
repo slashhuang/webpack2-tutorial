@@ -1,1 +1,1 @@
-alert('I am index')
+class A {}
