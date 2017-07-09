@@ -18,7 +18,8 @@
     "loaders": "node ./command.js -f=loaders",
     "plugins": "node ./command.js -f=plugins",
     "hoist": "node ./command.js -f=scope-hoisting",
-    "require": "node ./command.js -f=require"
+    "require": "node ./command.js -f=require",
+    "write": "webpack"
   },
   "author": "slashhuang",
   "license": "MIT",
