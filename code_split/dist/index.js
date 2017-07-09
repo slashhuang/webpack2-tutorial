@@ -16,9 +16,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-/******/
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -84,22 +84,18 @@ console.log('I am a split')
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__split_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__split_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__split_js__);
 // export import 
 // amd
 // require
 
 console.log('I am index')
 
-//require.ensure(dependencies: String[], callback: function(require), chunkName: String)
+// require.ensure(dependencies: String[], callback: function(require), chunkName: String)
 
-// require('./split');
-
+__webpack_require__(0);
+// import * as Test from './split.js';
 
 /***/ })
 /******/ ]);

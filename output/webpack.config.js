@@ -23,6 +23,6 @@ module.exports = {
     //导出文件 
     //hash ==> webpack编译过程
     // chunkhash => webpack对每个文件的hash
-    filename: '_[name].js'
+    filename: '_[name][chunkhash].js'
   }
 };
