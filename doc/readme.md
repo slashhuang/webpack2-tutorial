@@ -35,8 +35,21 @@ webpack.config.js
             test: /.jsx?$/,
             loader: 'babel-loader',
         }
-    }
+    },
+    plugins: [
+        new uglifyJsPlugin()
+        ==> mangle skrew
+        在webpack编译完所有的代码后再压缩和混淆呗？
+        lifecycle
+        on('done?',() => {
+            uglifyJsPlugin
+        })
+    ]
 }
+核心: core ===
+输入、输入: entry + output
+预处理文件: loader
+编译生命周期: plugins
 
 
 pub/sub: 设计模式 订阅发布
