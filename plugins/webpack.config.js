@@ -26,7 +26,7 @@ module.exports = {
         test:path.resolve(__dirname,'test/test.js')
     }
   },
-  // webpack lifecycle before-complitaion run done =>
+  // webpack lifecycle :before-complitaion run done =>
   plugins:[
             new webpack.ProvidePlugin({
                 $: 'jquery'
